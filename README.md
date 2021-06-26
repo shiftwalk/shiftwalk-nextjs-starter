@@ -1,2 +1,12 @@
-# Nextjs Boilerplate
-A [Next.js](https://nextjs.org/) starter kit with [Framer Motion](https://www.framer.com/motion/) and [TailwindCSS](https://tailwindcss.com/) plugged in
+# SG Nextjs Boilerplate
+A simple [Next.js](https://nextjs.org/) starter kit
+
+**Features:**
+- Next 11
+- Tailwind (With JIT mode enabled)
+- Custom PostCSS setup to allow for @import and nesting
+- Framer Motion 4 (With LazyMotion setup)
+- Preact instead of React for smaller bundle size
+- jsconfig component/helper/styles/public maps
+- ESLint configured
+- Some helper components

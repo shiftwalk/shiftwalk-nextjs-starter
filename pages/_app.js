@@ -1,4 +1,4 @@
-import '../styles/main.css'
+import '@/styles/main.css'
 import { AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/router'
 

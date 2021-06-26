@@ -5,7 +5,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 
-/* Default Typography Styles */
+/* Custom Styles */
 @import '_typography.css';
 
 /* Tailwind Utilities */

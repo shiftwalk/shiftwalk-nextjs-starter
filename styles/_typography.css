@@ -1,7 +1,8 @@
 body {
   @apply font-sans antialiased text-black bg-white;
 }
-  
+
+/* Content Stylings */
 .content > p {
   @apply mb-5;
 
@@ -18,18 +19,18 @@ body {
   }
 }
 
-.about-text {
-  text-indent: 3rem;
-}
-
+/* Heading Defaults */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, h6 {
   @apply p-0 mb-6;
 }
-  
-.content > h1, .content > .h1 {
+
+/* Content Headings */
+.content > h1,
+.content > .h1 {
   @apply text-4xl;
 }
   
-.content > h2, .content > .h2 {
+.content > h2,
+.content > .h2 {
   @apply text-3xl;
 }

@@ -1,5 +1,6 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}',],
+  mode: 'jit',
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false,
   theme: {
     fontFamily: {
@@ -28,5 +29,6 @@ module.exports = {
   },
   variants: {
     extend: {},
-  }
+  },
+  plugins: []
 }

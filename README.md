@@ -10,4 +10,4 @@ A simple [Next.js](https://nextjs.org/) starter kit.
 - jsconfig component/helper/styles/public maps
 - ESLint configured
 
-* To remove Preact and switch back to React simply remove the code in `next.config.js`
+__* To remove Preact and switch back to React simply remove the code in `next.config.js`__

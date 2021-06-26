@@ -1,4 +1,4 @@
-# SG Nextjs Boilerplate
+# Next Tailwind Framer Motion Boilerplate
 A simple [Next.js](https://nextjs.org/) starter kit.
 
 **Features:**

@@ -7,6 +7,7 @@ A simple [Next.js](https://nextjs.org/) starter kit.
 - Custom PostCSS setup to allow for `@import` and simple CSS nesting
 - Framer Motion 4 (With LazyMotion setup for smaller bundle sizes)
 - Preact configured instead of React for smaller bundle size*
+- SEO preconfigured with [next-seo](https://github.com/garmeeh/next-seo)
 - jsconfig component/helper/styles/public maps (allows you to use `@/components/...` instead of relative paths)
 
 _*To remove Preact and switch back to React simply remove the code in `next.config.js`_

@@ -1,7 +1,7 @@
 /* @font-face {
-  font-family: 'Raglan Sans';
-  src: url('../public/fonts/RaglanSans-Regular.woff2') format('woff2'),
-      url('../public/fonts/RaglanSans-Regular.woff') format('woff');
+  font-family: 'Example Sans';
+  src: url('../public/fonts/ExampleSans-Regular.woff2') format('woff2'),
+      url('../public/fonts/ExampleSans-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

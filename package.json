@@ -1,20 +1,36 @@
 {
-  "name": "next-starter",
-  "author": "Sam Goddard",
-  "version": "1.1.0",
-  "private": true,
+  "name": "next-tailwind-motion",
+  "description": "A simple Next.js starter kit with TailwindCSS (JIT) and Framer Motion preconfigured",
+  "author": "Sam Goddard <hello@samgoddard.co.uk> (https://samgoddard.co.uk)",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:samuelgoddard/next-tailwind-motion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samuelgoddard/next-tailwind-motion/issues"
+  },
+  "license": "ISC",
+  "keywords": [
+    "nextjs",
+    "next",
+    "tailwind",
+    "framer",
+    "motion",
+    "preact"
+  ],
+  "homepage": "https://sg-next-tailwind-motion.vercel.app/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
     "framer-motion": "^4.1.17",
     "next": "^11.0.1",
     "next-seo": "^4.26.0",
     "postcss-import": "^14.0.0",
-    "postcss-nested": "^5.0.3",
+    "postcss-nested": "^5.0.5",
     "postcss-preset-env": "^6.7.0",
     "preact": "^10.5.13",
     "react": "^17.0.2",
@@ -22,8 +38,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
-    "eslint": "^7.29.0",
-    "eslint-config-next": "^11.0.1",
     "postcss": "^8.3.5",
     "tailwindcss": "^2.2.4"
   }

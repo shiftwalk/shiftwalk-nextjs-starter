@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'sans': ['Raglan Sans', 'Arial', 'sans-serif'],
-      'mono': ['Space Mono', 'Arial', 'sans-serif'],
+      'mono': ['Lucida Console', 'Courier', 'monospace'],
     },
     screens: {
       sm: "640px",
@@ -19,9 +19,9 @@ module.exports = {
       colors: {
         'black': '#000',
         'white': '#FFF',
-        color: {
+        'example-color': {
           light: '#ffb288',
-          default: '#d18d67',
+          DEFAULT: '#d18d67',
           dark: '#ce8860',
         },
       }

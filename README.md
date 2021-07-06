@@ -13,6 +13,7 @@ A simple [Next.js](https://nextjs.org/) starter kit with [TailwindCSS](https://t
 - jsconfig component/helper/styles/public maps (allows you to use `@/components/...` instead of relative paths)
 
 ### Directory Structure
+```
 |-- components
     |-- container.js *// A simple container component to wrap areas in a max width*
     |-- fancyLink.js *// A simple wrapper around `next/link`
@@ -38,6 +39,7 @@ A simple [Next.js](https://nextjs.org/) starter kit with [TailwindCSS](https://t
 |-- next.config.js *// Prefer Preact to React*
 |-- package.json
 |-- README.md
-|-- tailwind.config.js 
+|-- tailwind.config.js
+```
 
 _*To remove Preact and switch back to React simply remove the code in `next.config.js`_

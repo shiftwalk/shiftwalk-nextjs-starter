@@ -3,7 +3,7 @@ Demo: [https://sg-next-tailwind-motion.vercel.app/](https://sg-next-tailwind-mot
 
 A simple [Next.js](https://nextjs.org/) starter kit with [TailwindCSS](https://tailwindcss.com/) (JIT) and [Framer Motion](https://www.framer.com/motion/) preconfigured
 
-**Features:**
+## Features
 - Next 11
 - Tailwind (With JIT mode enabled)
 - Custom PostCSS setup to allow for `@import` and simple CSS nesting

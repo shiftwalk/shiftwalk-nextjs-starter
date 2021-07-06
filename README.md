@@ -12,7 +12,7 @@ A simple [Next.js](https://nextjs.org/) starter kit with [TailwindCSS](https://t
 - SEO preconfigured with [next-seo](https://github.com/garmeeh/next-seo)
 - jsconfig component/helper/styles/public maps (allows you to use `@/components/...` instead of relative paths)
 
-### Directory Structure
+## Directory Structure
 ```
 |-- components
     |-- container.js *// A simple container component to wrap areas in a max width*

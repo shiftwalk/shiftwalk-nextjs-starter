@@ -12,10 +12,12 @@ A simple [Next.js](https://nextjs.org/) starter kit with [TailwindCSS](https://t
 - SEO preconfigured with [next-seo](https://github.com/garmeeh/next-seo)
 - [Module Aliasing](https://nextjs.org/docs/advanced-features/module-path-aliases) with `jsconfig.json`
 - Feature branch with [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/) configured for smooth, lerp based page scrolling
-- _COMING SOON - Feature branch with [Sanity](https://www.sanity.io/) configured_
-- _COMING SOON - Feature branch with [DatoCMS](https://www.datocms.com/) configured_
 
 _*To remove Preact and switch back to React simply remove the code in `next.config.js`_
+
+### Roadmap / Coming Soon...
+- Feature branch with [Sanity](https://www.sanity.io/) configured
+- Feature branch with [DatoCMS](https://www.datocms.com/) configured
 
 ## 🚀 Quick start
 

@@ -1,7 +1,7 @@
 # Next Tailwind Framer Motion Boilerplate
 Demo: [https://sg-next-tailwind-motion.vercel.app/](https://sg-next-tailwind-motion.vercel.app/)
 
-A simple [Next.js](https://nextjs.org/) starter kit with [TailwindCSS](https://tailwindcss.com/) (JIT) and [Framer Motion](https://www.framer.com/motion/) and a few other nice bits preconfigured.
+A simple [Next.js](https://nextjs.org/) starter kit with [TailwindCSS](https://tailwindcss.com/) (JIT), [Framer Motion](https://www.framer.com/motion/), and a few other nice bits preconfigured.
 
 ## ✨ Features
 - [Next](https://nextjs.org/) 11

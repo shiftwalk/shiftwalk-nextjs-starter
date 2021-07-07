@@ -4,14 +4,14 @@ Demo: [https://sg-next-tailwind-motion.vercel.app/](https://sg-next-tailwind-mot
 A simple [Next.js](https://nextjs.org/) starter kit with [TailwindCSS](https://tailwindcss.com/) (JIT) and [Framer Motion](https://www.framer.com/motion/) preconfigured.
 
 ## ✨ Features
-- Next 11
-- Tailwind (With JIT mode enabled)
-- Custom PostCSS setup to allow for `@import` and simple CSS nesting
-- Framer Motion 4 (With `LazyMotion` setup for smaller bundle sizes)
-- Preact configured instead of React for smaller bundle size*
+- [Next](https://nextjs.org/) 11
+- [Tailwind](https://tailwindcss.com/) (With [JIT](https://tailwindcss.com/docs/just-in-time-mode) mode enabled)
+- Custom [PostCSS](https://postcss.org/) setup to allow for `@import` and simple CSS nesting
+- [Framer Motion 4](https://www.framer.com/motion/) (With `LazyMotion` setup for smaller bundle sizes)
+- [Preact](https://preactjs.com/) configured instead of React for smaller bundle size*
 - SEO preconfigured with [next-seo](https://github.com/garmeeh/next-seo)
 - [Module Aliasing](https://nextjs.org/docs/advanced-features/module-path-aliases) with `jsconfig.json` - allows you to use `@/components/...@/public etc...` instead of relative paths)
-- Feature branch with [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/) configured
+- Feature branch with [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/) configured for smooth, lerp based page scrolling
 
 _*To remove Preact and switch back to React simply remove the code in `next.config.js`_
 

@@ -33,7 +33,7 @@ export default function About() {
                 <m.main variants={fade} className="mb-12 md:mb-16 xl:mb-24 pt-24 md:pt-20">
                   <Container>
                     <article>
-                      <h1 className="font-bold text-2xl md:text-3xl xl:text-4xl mb-4">Next x Tailwind x Motion</h1>
+                      <h1 className="font-bold text-2xl md:text-3xl xl:text-4xl mb-4">Next x Tailwind x Motion x Locomotive</h1>
                       <div className="content max-w-3xl mb-4">
                         <h2>Some example content</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
@@ -76,7 +76,7 @@ export default function About() {
                         <p>Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                       </div>
                       
-                      <FancyLink destination="/about" a11yText="Navigate to the about page" label="About Page" />
+                      <FancyLink destination="/" a11yText="Navigate to the home page" label="Home Page" />
                     </article>
                   </Container>
                 </m.main>

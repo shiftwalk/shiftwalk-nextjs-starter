@@ -11,7 +11,7 @@ A simple [Next.js](https://nextjs.org/) boilerplate with [TailwindCSS](https://t
 - [Preact](https://preactjs.com/) preconfigured instead of React for smaller bundle size*
 - SEO preconfigured with [next-seo](https://github.com/garmeeh/next-seo)
 - [Module Aliasing](https://nextjs.org/docs/advanced-features/module-path-aliases) preconfigured with `jsconfig.json`
-- Feature branch with [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/) preconfigured for smooth, lerp based page scrolling
+- [Feature branch](https://github.com/samuelgoddard/next-tailwind-motion/tree/locomotive-scroll) with [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/) preconfigured for smooth, lerp based page scrolling
 
 _*To remove Preact and switch back to React simply remove the code in `next.config.js`_
 

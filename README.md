@@ -1,18 +1,48 @@
 # Next Tailwind Framer Motion Boilerplate
 Demo: [https://sg-next-tailwind-motion.vercel.app/](https://sg-next-tailwind-motion.vercel.app/)
 
-A simple [Next.js](https://nextjs.org/) starter kit with [TailwindCSS](https://tailwindcss.com/) (JIT) and [Framer Motion](https://www.framer.com/motion/) preconfigured
+A simple [Next.js](https://nextjs.org/) starter kit with [TailwindCSS](https://tailwindcss.com/) (JIT) and [Framer Motion](https://www.framer.com/motion/) preconfigured.
 
-## Features
+## ✨ Features
 - Next 11
 - Tailwind (With JIT mode enabled)
 - Custom PostCSS setup to allow for `@import` and simple CSS nesting
 - Framer Motion 4 (With `LazyMotion` setup for smaller bundle sizes)
 - Preact configured instead of React for smaller bundle size*
 - SEO preconfigured with [next-seo](https://github.com/garmeeh/next-seo)
-- jsconfig component/helper/styles/public maps (allows you to use `@/components/...` instead of relative paths)
+- [Module Aliasing](https://nextjs.org/docs/advanced-features/module-path-aliases) with `jsconfig.json` - allows you to use `@/components/...@/public etc...` instead of relative paths)
+- Feature branch with [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/) configured
 
-## Directory Structure
+_*To remove Preact and switch back to React simply remove the code in `next.config.js`_
+
+## 🚀 Quick start
+
+1.  **Clone the repo**
+
+    ```sh
+    git clone https://github.com/samuelgoddard/next-tailwind-motion.git
+    ```
+
+2.  **Start developing.**
+
+    Navigate into your new site’s directory and install the local dependencies.
+
+    ```sh
+    npm i
+    ```
+
+    then
+
+    ```sh
+    cd next-tailwind-motion/
+    npm run dev
+    ```
+
+3.  **Open the source code and start editing!**
+
+    Your site is will be running at `http://localhost:3000`
+
+## 🗄 Directory Structure
 ```
 |-- components
     |-- container.js *// A simple container component to wrap areas in a max width*
@@ -34,12 +64,10 @@ A simple [Next.js](https://nextjs.org/) starter kit with [TailwindCSS](https://t
     |-- _typography.css *// custom typographical styles*
     |-- main.css *// Tailwind init and custom css imports*
 |-- .gitignore
-|-- jsconfig.json *// maps relative paths*
+|-- jsconfig.json *// module aliasing*
 |-- postcss.config.js *// Tailwind, CSS import, CSS nesting init*
 |-- next.config.js *// Prefer Preact to React*
 |-- package.json
 |-- README.md
 |-- tailwind.config.js
 ```
-
-_*To remove Preact and switch back to React simply remove the code in `next.config.js`_

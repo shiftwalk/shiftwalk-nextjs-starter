@@ -29,16 +29,12 @@ _*To remove Preact and switch back to React simply remove the code in `next.conf
 
 2.  **Start developing.**
 
-    Navigate into your new site’s directory and install the local dependencies.
-
-    ```sh
-    npm i
-    ```
-
-    then
+    Navigate into your new site’s directory and install the local dependencies first, then run the dev command.
 
     ```sh
     cd next-tailwind-motion/
+    
+    npm i
     npm run dev
     ```
 

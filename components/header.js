@@ -3,7 +3,7 @@ import Container from '@/components/container'
 
 export default function Header() {
   return (
-    <header className="py-4 bg-gray-200 mb-4 md:mb-6 xl:mb-8">
+    <header className="py-4 bg-gray-200 mb-4 md:mb-6 xl:mb-8 fixed top-0 left-0 right-0 w-full z-10" data-scroll data-scroll-sticky data-scroll-target="#scroll-container">
       <Container>
         <div className="flex flex-wrap">
           <FancyLink destination="/" a11yText="Navigate to the home page" label="Next x Tailwind x Motion" extraClasses="mb-1 md:mb-0" />

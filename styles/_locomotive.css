@@ -1,0 +1,26 @@
+html.has-scroll-smooth {
+  @apply overflow-hidden;
+}
+
+.has-scroll-smooth body {
+  @apply overflow-hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  @apply min-h-screen;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+  @apply h-screen inline-block whitespace-nowrap;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-section] {
+  @apply inline-block align-top whitespace-nowrap h-full;
+}

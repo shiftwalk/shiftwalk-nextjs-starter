@@ -1,6 +1,8 @@
 # Next Tailwind Framer Motion Boilerplate
 Demo: [https://sg-next-tailwind-motion.vercel.app/](https://sg-next-tailwind-motion.vercel.app/)
 
+Locomotive Scroll Demo: [https://sg-next-tailwind-motion-locomotive.vercel.app/](https://sg-next-tailwind-motion-locomotive.vercel.app/)
+
 A simple [Next.js](https://nextjs.org/) boilerplate with [TailwindCSS](https://tailwindcss.com/) ([JIT](https://tailwindcss.com/docs/just-in-time-mode)), [Framer Motion](https://www.framer.com/motion/), and a few other nice bits preconfigured.
 
 ## ✨ Features
@@ -55,12 +57,13 @@ _*To remove Preact and switch back to React simply remove the code in `next.conf
     |-- seo.config.js *// default SEO configuration helper, imported in `pages/_app.js`*
     |-- transitions.js *// re-usable framer motion transition helper with a basic 'fade' transition to get started*
 |-- pages
-    |-- _app.js *// Includes default SEO component & Framer motion AnimatePresence init*
+    |-- _app.js *// Includes default SEO component, Framer motion AnimatePresence & Locomotive Scroll init*
     |-- _document.js *// Default Next document component*
     |-- about.js
     |-- index.js
 |-- public *// Next public assets*
 |-- styles
+    |-- _locomotive.css *// custom locomotive scroll styles*
     |-- _fonts.css *// custom webfont styles*
     |-- _typography.css *// custom typographical styles*
     |-- main.css *// Tailwind init and custom css imports*

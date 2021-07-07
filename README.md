@@ -18,6 +18,7 @@ _*To remove Preact and switch back to React simply remove the code in `next.conf
 ### Roadmap / Coming Soon...
 - Feature branch with [Sanity](https://www.sanity.io/) configured
 - Feature branch with [DatoCMS](https://www.datocms.com/) configured
+- Feature branch with [GSAP](https://greensock.com/gsap/) configured
 
 ## 🚀 Quick start
 

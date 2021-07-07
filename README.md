@@ -6,19 +6,19 @@ A simple [Next.js](https://nextjs.org/) boilerplate with [TailwindCSS](https://t
 ## ✨ Features
 - [Next](https://nextjs.org/) 11
 - [Tailwind](https://tailwindcss.com/) (With [JIT](https://tailwindcss.com/docs/just-in-time-mode) mode enabled)
-- Custom [PostCSS](https://postcss.org/) setup to allow for `@import` and simple CSS nesting
+- Custom [PostCSS](https://postcss.org/) setup preconfigured to allow for `@import` and simple CSS nesting
 - [Framer Motion 4](https://www.framer.com/motion/) (With [LazyMotion](https://www.framer.com/api/motion/lazy-motion/) setup for smaller bundle sizes)
-- [Preact](https://preactjs.com/) configured instead of React for smaller bundle size*
+- [Preact](https://preactjs.com/) preconfigured instead of React for smaller bundle size*
 - SEO preconfigured with [next-seo](https://github.com/garmeeh/next-seo)
-- [Module Aliasing](https://nextjs.org/docs/advanced-features/module-path-aliases) with `jsconfig.json`
-- Feature branch with [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/) configured for smooth, lerp based page scrolling
+- [Module Aliasing](https://nextjs.org/docs/advanced-features/module-path-aliases) preconfigured with `jsconfig.json`
+- Feature branch with [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/) preconfigured for smooth, lerp based page scrolling
 
 _*To remove Preact and switch back to React simply remove the code in `next.config.js`_
 
 ### Roadmap / Coming Soon...
-- Feature branch with [Sanity](https://www.sanity.io/) configured
-- Feature branch with [DatoCMS](https://www.datocms.com/) configured
-- Feature branch with [GSAP](https://greensock.com/gsap/) configured
+- Feature branch with [Sanity](https://www.sanity.io/) preconfigured
+- Feature branch with [DatoCMS](https://www.datocms.com/) preconfigured
+- Feature branch with [GSAP](https://greensock.com/gsap/) preconfigured
 
 ## 🚀 Quick start
 

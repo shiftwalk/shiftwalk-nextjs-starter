@@ -6,7 +6,8 @@ Locomotive Scroll Demo: [https://sg-next-tailwind-motion-locomotive.vercel.app/]
 A simple [Next.js](https://nextjs.org/) boilerplate with [TailwindCSS](https://tailwindcss.com/) ([JIT](https://tailwindcss.com/docs/just-in-time-mode)), [Framer Motion](https://www.framer.com/motion/), and a few other nice bits preconfigured.
 
 ## ✨ Features
-- [Next](https://nextjs.org/) 11
+- [Next](https://nextjs.org/) 12
+- [SWC Minification](https://nextjs.org/docs/
 - [Tailwind](https://tailwindcss.com/) (With [JIT](https://tailwindcss.com/docs/just-in-time-mode) mode enabled)
 - Custom [PostCSS](https://postcss.org/) setup preconfigured to allow for `@import` and simple CSS nesting
 - [Framer Motion 4](https://www.framer.com/motion/) (With [LazyMotion](https://www.framer.com/api/motion/lazy-motion/) setup for smaller bundle sizes)

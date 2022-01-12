@@ -8,7 +8,7 @@ A simple [Next.js](https://nextjs.org/) boilerplate with [TailwindCSS](https://t
 ## ✨ Features
 - [Next](https://nextjs.org/) 12
 - [SWC Minification](https://nextjs.org/docs/
-- [Tailwind](https://tailwindcss.com/) (With [JIT](https://tailwindcss.com/docs/just-in-time-mode) mode enabled)
+- [Tailwind](https://tailwindcss.com/) 3.0
 - Custom [PostCSS](https://postcss.org/) setup preconfigured to allow for `@import` and simple CSS nesting
 - [Framer Motion 4](https://www.framer.com/motion/) (With [LazyMotion](https://www.framer.com/api/motion/lazy-motion/) setup for smaller bundle sizes)
 - [Preact](https://preactjs.com/) preconfigured instead of React for smaller bundle size*

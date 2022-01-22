@@ -1,19 +1,46 @@
 /* Webfonts */
-@import '_fonts.css';
+@import "_fonts.css";
 
 /* Tailwind base/components */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
 
 /* Custom Style Imports */
-@import '_typography.css';
-@import '_locomotive.css';
+@import "_typography.css";
+@import "_locomotive.css";
 
 /* Tailwind Utilities */
-@import 'tailwindcss/utilities';
-
+@import "tailwindcss/utilities";
 
 /* Simple defaults */
 body {
   @apply font-sans antialiased text-black bg-white;
+}
+h1 {
+  @apply font-neueBold tracking-tight;
+}
+
+h2 {
+  @apply font-neueRegular tracking-tight;
+}
+
+p,
+a {
+  @apply font-neueLight;
+}
+
+li {
+  @apply text-2xl;
+}
+
+@layer components {
+  .shadow {
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    border-radius: 4px;
+    z-index: -1;
+    height: 10%;
+    top: 29px;
+  }
 }

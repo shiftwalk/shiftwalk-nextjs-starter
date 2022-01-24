@@ -21,8 +21,8 @@ export default function Contact(props) {
             return (
               <div class="w-full xsl:w-6/12">
                 <h4 class="text-2xl">{title}</h4>
-                <p class="mt-1 xl:text-2xl">{subtitle}</p>
-                <p class="text-2xl">{info}</p>
+                <p class="mt-1  xl:text-2xl">{subtitle}</p>
+                <p class="xl:text-2xl">{info}</p>
               </div>
             );
           })}

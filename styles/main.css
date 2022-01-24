@@ -17,16 +17,17 @@ body {
   @apply font-sans antialiased text-black bg-white;
 }
 h1 {
-  @apply font-neueBold tracking-tight;
+  @apply font-sans;
 }
 
-h2 {
-  @apply font-neueRegular tracking-tight;
+h2,
+h3 {
+  @apply font-sans tracking-tight;
 }
 
 p,
 a {
-  @apply font-neueLight;
+  @apply font-futuraLight no-underline;
 }
 
 li {
@@ -42,5 +43,20 @@ li {
     z-index: -1;
     height: 10%;
     top: 29px;
+  }
+
+  .bar {
+    height: 1px;
+    background: "black";
+  }
+
+  .menu-overlay-item {
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+  }
+
+  .menu-overlay-item:hover {
+    /* temporary fix: !important */
+    transform: translateX(15px) !important;
   }
 }

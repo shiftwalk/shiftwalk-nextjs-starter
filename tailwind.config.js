@@ -5,19 +5,21 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Helvetica", "Poppins", , "sans-serif"],
+      sans: ["Futura", "Poppins", "sans-serif"],
       mono: ["Lucida Console", "Courier", "monospace"],
       neueLight: ["Neue-Light"],
       neueRegular: ["Neue-Regular"],
       neueBold: ["Neue-Bold"],
+      futuraLight: ["Futura-Light"],
     },
     screens: {
+      xsm: "400px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",
       "2xl": "1600px",
-      "3xl": "1920px",
+      "3xl": "2000px",
     },
     extend: {
       colors: {
@@ -25,7 +27,7 @@ module.exports = {
         white: "#FFF",
         gray: "fbae17",
         "example-color": {
-          light: "#ffb288",
+          light: "#EAE9E5",
           DEFAULT: "#d18d67",
           dark: "#ce8860",
         },

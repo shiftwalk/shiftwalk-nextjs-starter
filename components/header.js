@@ -1,7 +1,7 @@
 import FancyLink from "@/components/fancyLink";
 import Container from "@/components/container";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   motion,
   AnimateSharedLayout,
@@ -12,51 +12,87 @@ import {
 
 export default function Header() {
   const [activeIndex, setActiveIndex] = useState(null);
-  const [open, cycleOpen] = useCycle(false, true);
+  const [open, setOpen] = useCycle(false, true);
+  const [stagger, setStagger] = useState(false);
   const menuItems = [
     { route: "Home", url: "/" },
     { route: "About", url: "/about" },
     { route: "Services", url: "/services" },
     { route: "Contact", url: "/contact" },
   ];
-  // animations du Aside
-  const sideVariants = {
-    closed: {
+
+  // Overlay COntainer
+  const asideVariants = {
+    open: {
+      x: 0,
+      opacity: 1,
       transition: {
-        duration: 1,
-        staggerChildren: 0.3,
-        staggerDirection: -1,
+        duration: 0.9,
+        ease: [0.79, 0.14, 0.15, 0.86],
       },
     },
-    open: {
+    closed: {
+      x: "-100%",
+      opacity: 0,
       transition: {
-        duration: 1,
-        staggerChildren: 0.3,
+        duration: 0.9,
+        ease: [0.79, 0.14, 0.15, 0.86],
+        when: "afterChildren",
+      },
+    },
+  };
+
+  // UL
+  const listVariants = {
+    open: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.07,
         staggerDirection: 1,
       },
     },
-  };
-
-  const itemVariants = {
     closed: {
       opacity: 0,
+      transition: {
+        staggerChildren: 0.05,
+        staggerDirection: -1,
+        when: "afterChildren",
+      },
     },
-    open: { opacity: 1 },
   };
 
+  // LI
+  const itemVariants = {
+    closed: {
+      x: "-100%",
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+        ease: [0.79, 0.14, 0.15, 0.86],
+      },
+    },
+    open: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.7,
+        ease: [0.46, 0.03, 0.52, 0.96],
+      },
+    },
+  };
   return (
     <header
-      className=" py-4  mb-4 md:mb-6 xl:mb-8 fixed top-0 left-0 right-0 w-full z-10"
+      className="bg-example-color-light   w-full z-10 flex flex-col justify-center h-16"
       data-scroll
       data-scroll-sticky
       data-scroll-target="#scroll-container">
       <Container>
-        <div className="flex justify-between">
+        <div class="flex justify-between">
           <FancyLink
             destination="/"
             a11yText="Navigate to the home page"
             label="Logo"
-            extraClasses="mb-1 md:mb-0 text-3xl font-neueLight "
+            extraClasses="mb-1 md:mb-0 text-2xl font-neueLight  "
           />
           <AnimateSharedLayout>
             <nav className="hidden md:flex justify-end items-center  w-full  md:w-auto">
@@ -95,19 +131,26 @@ export default function Header() {
               </motion.ul>
             </nav>
           </AnimateSharedLayout>
-          <button class=" md:hidden" onClick={cycleOpen}>
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
+          <button
+            class={`md:hidden z-10 relative w-8 +  ${
+              open ? "text-white" : "text-black"
+            }`}
+            onClick={setOpen}>
+            <span
+              aria-hidden="true"
+              class={` block absolute h-0.5 w-full bg-current transform transition duration-500 ease-in-out ${
+                open ? `rotate-45` : `-translate-y-1.5`
+              }`}></span>
+            <span
+              aria-hidden="true"
+              class={` block absolute h-0.5 w-full  bg-current transform transition duration-500 ease-in-out  ${
+                open ? `opacity-0` : `null`
+              }`}></span>
+            <span
+              aria-hidden="true"
+              class={` block absolute h-0.5 w-full bg-current transform transition duration-500 ease-in-out  ${
+                open ? `-rotate-45` : `translate-y-1.5`
+              }`}></span>
           </button>
         </div>
       </Container>
@@ -115,60 +158,25 @@ export default function Header() {
       <AnimatePresence>
         {open && (
           <motion.aside
-            initial={{ width: 0, opacity: 0 }}
-            animate={{
-              width: "100vw",
-              opacity: 1,
-              transition: {
-                delay: 0.2,
-                duration: 0.5,
-                type: "tween",
-                ease: "easeInOut",
-              },
-            }}
-            exit={{
-              width: 0,
-              opacity: 0,
-              transition: {
-                delay: 0.2,
-                duration: 0.3,
-                type: "tween",
-                ease: "easeInOut",
-              },
-            }}
-            class="bg-blue-900 absolute left-0 top-0 w-full h-screen font-neueBold px-6 md:hidden pt-4">
-            <div class="flex justify-end ">
-              <button onClick={cycleOpen}>
-                <svg
-                  class="w-8 h-10"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-              </button>
-            </div>
-            <AnimateSharedLayout>
-              <motion.ul
-                initial="closed"
-                animate="open"
-                exit="closed"
-                variants={sideVariants}
-                class="flex flex-col justify-start h-4/6 overflow-x-hidden">
-                {menuItems.map(({ route, url }, index) => {
-                  return (
-                    <motion.li variants={itemVariants} class="text-8xl pt-10">
-                      {route}
-                    </motion.li>
-                  );
-                })}
-              </motion.ul>
-            </AnimateSharedLayout>
+            variants={asideVariants}
+            initial="closed"
+            animate={open && "open"}
+            exit="closed"
+            class="bg-black text-white absolute left-0 top-0 w-full h-screen font-sans px-10 md:hidden pt-20">
+            <hr class="mt-20 opacity-10" />
+            <motion.ul
+              variants={listVariants}
+              class="flex flex-col justify-start h-5/6 overflow-hidden ">
+              {menuItems.map(({ route, url }, index) => {
+                return (
+                  <motion.li
+                    variants={itemVariants}
+                    class="menu-overlay-item text-white text-6xl  md:text-7xl pt-10  ">
+                    {route}
+                  </motion.li>
+                );
+              })}
+            </motion.ul>
           </motion.aside>
         )}
       </AnimatePresence>

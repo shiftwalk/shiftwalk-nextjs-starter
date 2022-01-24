@@ -2,30 +2,30 @@ import React from "react";
 import Container from "./container";
 
 export default function Contact(props) {
+  const items = [
+    { title: "Collaborate", subtitle: "agency@info.com", info: "+336655465" },
+    {
+      title: "Adress",
+      subtitle: "886 Walter Streets",
+      info: "New York, NY 12345",
+    },
+    { title: "Links", subtitle: "agency@info.com", info: "+336655465" },
+  ];
   return (
     <Container>
       <section
-        class="contact flex flex-wrap  w-11/12 pb-20"
+        class="contact border-t border-black  grid grid-cols-1 gap-20 py-16 md:grid-cols-2 lg:grid-cols-3 "
         aria-labelledby="footer-heading">
-        <div class=" w-full md:w-4/12">
-          <h1 class="text-4xl">Contact</h1>
-        </div>
-        <div class=" flex-grow flex flex-wrap gap-y-10 mt-8 md:mt-0 sm:gap-y-14">
-          <div class="w-full xsm:w-6/12">
-            <h4 class="text-2xl ">Collaborate</h4>
-            <p class="mt-1">agency@info.com</p>
-            <p>+33664765689</p>
-          </div>
-          <div class="w-full xsm:w-6/12">
-            <h4 class="text-2xl">Adress</h4>
-            <p class="mt-1">886 Walter Streets</p>
-            <p>New York, NY 12345</p>
-          </div>
-          <div class="w-full xsm:w-6/12">
-            <h4 class="text-2xl">Links</h4>
-            <p class="mt-1">agency@info.com</p>
-            <p>+33664765689</p>
-          </div>
+        <div class="grid grid-cols-1 gap-20 py-16 md:grid-cols-2   col-span-2  md:mt-0 sm:gap-y-14">
+          {items.map(({ title, subtitle, info }, index) => {
+            return (
+              <div class="w-full xsl:w-6/12">
+                <h4 class="text-2xl">{title}</h4>
+                <p class="mt-1 xl:text-2xl">{subtitle}</p>
+                <p class="text-2xl">{info}</p>
+              </div>
+            );
+          })}
         </div>
       </section>
     </Container>

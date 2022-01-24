@@ -91,7 +91,7 @@ export default function Header() {
 
   return (
     <header
-      className="bg-example-color-light   w-full z-10 flex flex-col justify-center h-16"
+      className="bg-example-color-light  fixed top-0 left-0 right-0  w-full z-10 flex flex-col justify-center h-16"
       data-scroll
       data-scroll-sticky
       data-scroll-target="#scroll-container">

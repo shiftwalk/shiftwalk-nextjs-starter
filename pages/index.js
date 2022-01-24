@@ -2,6 +2,8 @@ import { useRef } from "react";
 import Layout from "@/components/layout";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
+import Services from "@/components/services";
+import Content from "@/components/content";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Container from "@/components/container";
@@ -30,6 +32,8 @@ export default function Home() {
               <m.div initial="initial" animate="enter" exit="exit">
                 {/* HERO SECTION */}
                 <Hero />
+                <Content />
+                <Services />
                 <Contact />
                 <Footer />
               </m.div>

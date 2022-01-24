@@ -25,13 +25,21 @@ h3 {
   @apply font-sans tracking-tight;
 }
 
+h3 {
+  @apply text-4xl font-futuraLight;
+}
+
 p,
 a {
   @apply font-futuraLight no-underline;
 }
 
 li {
-  @apply text-xl;
+  @apply text-xl xl:text-2xl;
+}
+
+p {
+  @apply text-lg  sm:text-xl;
 }
 
 @layer components {

@@ -31,7 +31,7 @@ a {
 }
 
 li {
-  @apply text-2xl;
+  @apply text-xl;
 }
 
 @layer components {

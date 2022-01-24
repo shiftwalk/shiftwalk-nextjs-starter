@@ -80,6 +80,13 @@ export default function Header() {
       },
     },
   };
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    }
+  }, [open]);
+
   return (
     <header
       className="bg-example-color-light   w-full z-10 flex flex-col justify-center h-16"
@@ -163,7 +170,6 @@ export default function Header() {
             animate={open && "open"}
             exit="closed"
             class="bg-black text-white absolute left-0 top-0 w-full h-screen font-sans px-10 md:hidden pt-20">
-            <hr class="mt-20 opacity-10" />
             <motion.ul
               variants={listVariants}
               class="flex flex-col justify-start h-5/6 overflow-hidden ">

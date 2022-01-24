@@ -31,7 +31,7 @@ a {
 }
 
 li {
-  @apply text-xl;
+  @apply text-base;
 }
 
 @layer components {

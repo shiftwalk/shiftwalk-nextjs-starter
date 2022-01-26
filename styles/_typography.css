@@ -8,16 +8,23 @@
     @apply underline hover:text-opacity-25 focus:text-opacity-25;
   }
 
-  & > h1, & > .h1 {
+  & > h1,
+  & > .h1 {
     @apply text-3xl md:text-4xl;
   }
 
-  & > h2, & > .h2 {
+  & > h2,
+  & > .h2 {
     @apply text-2xl md:text-3xl;
   }
 }
 
 /* Heading Defaults */
-h1, .h1, h2, .h2, h3, .h3 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
   @apply p-0 mb-6 font-bold;
 }

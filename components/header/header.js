@@ -4,7 +4,7 @@ import Navigation from "./navigation";
 import OverlayMenu from "./menu";
 import Link from "next/link";
 import Burger from "./burger";
-import Logo from "@/components/logo";
+import Logo from "@/components/header/logo";
 
 import { useState, useEffect } from "react";
 import {
@@ -61,7 +61,7 @@ export default function Header() {
       data-scroll-target="#scroll-container">
       <Container extraClasses="Header-Section ">
         <div class="flex justify-between h-full ">
-          <Logo width="w-20 md:w-24 xl:w-32" />
+          <Logo width=" w-16 sm:w-20 md:w-24 " />
           <AnimateSharedLayout>
             <Navigation
               items={menuItems}

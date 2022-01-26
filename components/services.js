@@ -81,8 +81,8 @@ export default function Services() {
   ];
 
   return (
-    <Container>
-      <section class=" border-t border-black  grid grid-cols-1 gap-20  py-32  md:grid-cols-2 lg:grid-cols-3">
+    <Container extraClasses=" Services-Container py-48 ">
+      <div class="   grid grid-cols-1 gap-20    md:grid-cols-2 lg:grid-cols-3">
         {items.map(({ img, title, content }, index) => {
           return (
             <div class="service-container flex flex-col">
@@ -94,7 +94,7 @@ export default function Services() {
             </div>
           );
         })}
-      </section>
+      </div>
     </Container>
   );
 }

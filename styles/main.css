@@ -20,13 +20,16 @@ h1 {
   @apply font-sans;
 }
 
-h2,
-h3 {
+h2 {
   @apply font-sans tracking-tight;
 }
 
 h3 {
-  @apply text-4xl font-futuraLight;
+  @apply text-4xl font-futuraLight tracking-tight;
+}
+
+h4 {
+  @apply text-2xl;
 }
 
 p,
@@ -39,7 +42,7 @@ li {
 }
 
 p {
-  @apply text-lg  sm:text-xl;
+  @apply text-lg  sm:text-xl  xl:text-2xl;
 }
 
 @layer components {

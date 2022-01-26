@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Layout from "@/components/layout";
-import Header from "@/components/header";
+import Header from "@/components/header/header";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
 import Content from "@/components/content";

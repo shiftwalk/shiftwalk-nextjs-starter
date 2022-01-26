@@ -1,7 +1,8 @@
-export default function Container({ children }) {
+export default function Container({ children, extraClasses }) {
   return (
-    <div className="px-6 max-w-screen-3xl mx-auto w-full md:px-8">
+    <section
+      className={`${extraClasses} px-6 max-w-screen-3xl mx-auto w-full  md:px-8`}>
       {children}
-    </div>
+    </section>
   );
 }

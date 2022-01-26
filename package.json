@@ -23,13 +23,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "tailwind-config-viewer": "tailwind-config-viewer -o"
   },
   "dependencies": {
     "classnames": "^2.3.1",
     "framer-motion": "^4.1.17",
     "locomotive-scroll": "^4.1.3",
     "next": "^12.0.8",
+    "next-images": "^1.8.1",
     "next-seo": "^4.26.0",
     "postcss-import": "^14.0.0",
     "postcss-nested": "^5.0.5",

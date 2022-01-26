@@ -26,6 +26,10 @@ module.exports = {
         black: "#000",
         white: "#FFF",
         gray: "fbae17",
+        palette: {
+          blue: "#105099",
+          light: "#EAE9E5",
+        },
         "example-color": {
           light: "#EAE9E5",
           DEFAULT: "#d18d67",

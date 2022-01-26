@@ -7,7 +7,12 @@ export default function Hero() {
   return (
     <Container extraClasses="Hero-Container relative ">
       <m.main class="hero h-screen sm:h-screen flex flex-col justify-center  ">
-        <div class="py-20">
+        <m.div
+          class="py-20"
+          variants={fade}
+          initial="initial"
+          animate="enter"
+          exit="exit">
           <div class=" hero-container text-left  w-12/12 ">
             <h1 class="text-2xl  sm:text-5xl  md:text-7xl lg:text-8xl">
               A secure and faster way to transfer money.
@@ -16,7 +21,7 @@ export default function Hero() {
               We charge aslittle as possible, and we always show you upfront.
             </p>
           </div>
-        </div>
+        </m.div>
       </m.main>
       <div class=" arrow absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5 ">
         <svg

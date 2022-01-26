@@ -1,7 +1,14 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { fade } from "@/helpers/transitions";
 export default function Logo({ width, src }) {
   return (
-    <div class="logo-container">
+    <motion.div
+      class="logo-container"
+      variants={fade}
+      initial="initial"
+      animate="enter"
+      exit="exit">
       <Link href="/">
         <a>
           <svg
@@ -40,6 +47,6 @@ export default function Logo({ width, src }) {
           </svg>
         </a>
       </Link>
-    </div>
+    </motion.div>
   );
 }

@@ -61,7 +61,7 @@ export default function Header() {
       data-scroll-target="#scroll-container">
       <Container extraClasses="Header-Section ">
         <div class="flex justify-between h-full ">
-          <Logo width=" w-14 sm:w-20 md:w-24 " />
+          <Logo width=" w-14 sm:w-20 md:w-24" />
           <AnimateSharedLayout>
             <Navigation
               items={menuItems}

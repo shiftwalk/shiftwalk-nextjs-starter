@@ -1,10 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { fade } from "@/helpers/transitions";
 export default function Navigation({ items, activeIndex, setActiveIndex }) {
   return (
-    <nav className="hidden md:flex justify-end items-center  w-full  md:w-auto">
+    <motion.nav className="hidden md:flex justify-end items-center  w-full  md:w-auto">
       <motion.ul
+        variants={fade}
+        initial="initial"
+        animate="enter"
+        exit="exit"
         onHoverEnd={() => {
           setActiveIndex(null);
         }}
@@ -35,6 +40,6 @@ export default function Navigation({ items, activeIndex, setActiveIndex }) {
           );
         })}
       </motion.ul>
-    </nav>
+    </motion.nav>
   );
 }

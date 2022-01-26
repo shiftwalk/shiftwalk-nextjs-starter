@@ -17,7 +17,7 @@ body {
   @apply font-sans antialiased text-black bg-white;
 }
 h1 {
-  @apply font-sans mb-3  text-5xl  sm:text-7xl  md:text-8xl lg:text-9xl leading-tight;
+  @apply font-sans mb-3  text-4xl  sm:text-7xl  md:text-8xl lg:text-9xl leading-tight;
 }
 
 h2 {

@@ -12,11 +12,11 @@ export default function Contact(props) {
     { title: "Links", subtitle: "agency@info.com", info: "+336655465" },
   ];
   return (
-    <Container>
-      <section
-        class="contact border-t border-black  grid grid-cols-1 gap-20 py-16 md:grid-cols-2 lg:grid-cols-3 "
+    <Container extraClasses="Contact-Container py-16 md:py-32">
+      <div
+        class="contact   grid grid-cols-1 gap-20  md:grid-cols-2 lg:grid-cols-3 "
         aria-labelledby="footer-heading">
-        <div class="grid grid-cols-1 gap-20 py-16 md:grid-cols-2   col-span-2  md:mt-0 sm:gap-y-14">
+        <div class="grid grid-cols-1 gap-20  md:grid-cols-2   col-span-2  md:mt-0 sm:gap-y-14">
           {items.map(({ title, subtitle, info }, index) => {
             return (
               <div class="w-full xsl:w-6/12">
@@ -27,7 +27,7 @@ export default function Contact(props) {
             );
           })}
         </div>
-      </section>
+      </div>
     </Container>
   );
 }

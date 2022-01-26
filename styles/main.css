@@ -16,8 +16,9 @@
 body {
   @apply font-sans antialiased text-black bg-white;
 }
+
 h1 {
-  @apply font-sans mb-3  text-4xl  sm:text-7xl  md:text-8xl lg:text-9xl leading-tight;
+  @apply font-sans mb-3   leading-tight;
 }
 
 h2 {
@@ -46,6 +47,14 @@ p {
 }
 
 @layer components {
+  .arrow {
+    top: 85%;
+  }
+
+  .hero-container {
+    max-width: 1000px;
+  }
+
   .shadow {
     position: absolute;
     inset: 0;
@@ -70,4 +79,19 @@ p {
     /* temporary fix: !important */
     transform: translateX(15px) !important;
   }
+}
+
+@layer utilities {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* section {
+    border: 1px solid red;
+  } */
 }

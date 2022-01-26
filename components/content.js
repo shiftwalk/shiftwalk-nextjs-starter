@@ -3,18 +3,18 @@ import Container from "./container";
 
 export default function content() {
   return (
-    <Container extraClasses="Content-Container  h-screen py-12 min-h-screen sm:py-24 lg:py-32">
+    <Container extraClasses="Content-Container   py-12 min-h-screen  lg:py-32">
       <div class="grid h-full lg:grid-cols-2 gap-8 lg:gap-12 ">
         <div class=" grid-left  md: bg-gray-100 overflow-hidden rounded-lg shadow-lg">
           <img
-            src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=600&h=750"
+            src="https://images.frandroid.com/wp-content/uploads/2020/12/apple-macbook-pro-m1-frandroid-scaled.jpg"
             loading="lazy"
             alt="Photo by Martin Sanchez"
-            class="w-full h-full object-cover object-center"
+            class=" max-w-full h-auto md:w-full md:h-full object-cover object-center aspect-auto"
           />
         </div>
 
-        <div class=" grid-right mt-16 md:pt-8">
+        <div class=" grid-right mt-16   md:pt-8">
           <h3 class=" text-left md:text-left">Who we are</h3>
 
           <h4 class="mt-8  md:text-left mb-4 md:mb-6">

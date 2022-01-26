@@ -81,7 +81,7 @@ export default function Services() {
   ];
 
   return (
-    <Container extraClasses=" Services-Container py-48 ">
+    <Container extraClasses=" Services-Container py-16 md:py-32">
       <div class="   grid grid-cols-1 gap-20    md:grid-cols-2 lg:grid-cols-3">
         {items.map(({ img, title, content }, index) => {
           return (

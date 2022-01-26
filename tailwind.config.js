@@ -36,6 +36,10 @@ module.exports = {
           dark: "#ce8860",
         },
       },
+      height: (theme) => ({
+        "50vh": "50vh",
+        "75vh": "75vh",
+      }),
     },
   },
   plugins: [],

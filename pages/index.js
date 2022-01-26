@@ -17,7 +17,7 @@ export default function Home() {
   const containerRef = useRef(null);
 
   return (
-    <Layout>
+    <Layout class="no-scrollbar">
       <NextSeo title="Home" />
 
       <LocomotiveScrollProvider

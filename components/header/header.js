@@ -5,7 +5,7 @@ import OverlayMenu from "./menu";
 import Link from "next/link";
 import Burger from "./burger";
 import Logo from "@/components/logo";
-import { asideVariants, listVariants, itemVariants } from "./animations";
+
 import { useState, useEffect } from "react";
 import {
   motion,
@@ -32,6 +32,26 @@ export default function Header() {
       document.body.style.overflow = "visible";
     }
   }, [open]);
+
+  const asideVariants = {
+    open: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.9,
+        ease: [0.79, 0.14, 0.15, 0.86],
+      },
+    },
+    closed: {
+      x: "-100%",
+      opacity: 0,
+      transition: {
+        duration: 0.9,
+        ease: [0.79, 0.14, 0.15, 0.86],
+        when: "afterChildren",
+      },
+    },
+  };
 
   return (
     <header

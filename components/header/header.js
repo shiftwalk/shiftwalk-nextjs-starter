@@ -55,7 +55,7 @@ export default function Header() {
 
   return (
     <header
-      className="bg-white fixed top-0 left-0 right-0  w-full z-10 flex flex-col justify-center h-16 sm:h-20 xl:h-24 border-black border-b-2"
+      className="bg-white fixed top-0 left-0 right-0  w-full z-10 flex flex-col justify-center h-14 sm:h-20 xl:h-24 border-black border-b-2"
       data-scroll
       data-scroll-sticky
       data-scroll-target="#scroll-container">

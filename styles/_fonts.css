@@ -98,14 +98,3 @@ FUTURA
   font-style: normal;
   font-display: swap;
 }
-
-
-
-/* @font-face {
-  font-family: "Futura-Bold";
-  src: url("../public/fonts/FuturaPT/FuturaPT-Bold.woff2") format("woff2"),
-    url("../public/fonts/FuturaPT/FuturaPT-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-} */

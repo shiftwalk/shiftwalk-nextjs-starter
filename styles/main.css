@@ -43,18 +43,21 @@ li {
 }
 
 p {
-  @apply text-lg  sm:text-xl  xl:text-2xl;
+  @apply text-lg sm:text-xl  xl:text-2xl;
 }
 
 @layer components {
-  .arrow {
-    top: 85%;
-  }
-
+  /* Hero Headline*/
   .hero-container {
     max-width: 1000px;
   }
 
+  /* Scroll Indicator */
+  .arrow {
+    top: 85%;
+  }
+
+  /* Naviagtion underline */
   .shadow {
     position: absolute;
     inset: 0;
@@ -65,11 +68,13 @@ p {
     top: 29px;
   }
 
+  /* Burger */
   .bar {
     height: 1px;
     background: "black";
   }
 
+  /* Overlay Menu Item*/
   .menu-overlay-item {
     cursor: pointer;
     transition: all 0.4s ease-out;
@@ -82,6 +87,7 @@ p {
 }
 
 @layer utilities {
+  /* Hide scrollbar */
   body::-webkit-scrollbar {
     display: none;
   }
@@ -90,8 +96,4 @@ p {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
-
-  /* section {
-    border: 1px solid red;
-  } */
 }

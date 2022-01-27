@@ -1,11 +1,11 @@
-import '@/styles/main.css'
-import { AnimatePresence } from 'framer-motion'
-import { useRouter } from 'next/router'
-import { DefaultSeo } from 'next-seo'
-import SEO from '@/helpers/seo.config'
+import "@/styles/main.css";
+import { AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
+import { DefaultSeo } from "next-seo";
+import SEO from "@/helpers/seo.config";
 
 export default function App({ Component, pageProps }) {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <>
@@ -15,5 +15,5 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} key={router.asPath} />
       </AnimatePresence>
     </>
-  )
+  );
 }

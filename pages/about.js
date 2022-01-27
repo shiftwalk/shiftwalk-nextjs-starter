@@ -14,7 +14,6 @@ export default function About() {
   return (
     <Layout>
       <NextSeo title="About" />
-
       <LocomotiveScrollProvider
         options={{ smooth: true, lerp: 0.05 }}
         containerRef={containerRef}

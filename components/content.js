@@ -3,7 +3,7 @@ import Container from "./container";
 
 export default function content() {
   return (
-    <Container extraClasses="Content-Container   py-12 min-h-screen  lg:py-32">
+    <Container extraClasses="Content-Container   py-12   lg:py-32">
       <div class="grid h-full lg:grid-cols-2 gap-8 lg:gap-12 ">
         <div class=" grid-left  md: bg-gray-100 overflow-hidden rounded-lg shadow-lg">
           <img

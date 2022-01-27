@@ -17,9 +17,11 @@ export default function Hero() {
             <h1 class="text-2xl  sm:text-5xl  md:text-7xl lg:text-8xl">
               A secure and faster way to transfer money.
             </h1>
-            <p class=" font-sans opacity-50 text-gray-900  mt-8 mb-6 w-12/12 text-base sm:max-w-screen-sm sm:text-2xl    md:leading-normal   lg:text-3xl lg:max-w-screen-md xl:text-3xl ">
-              We charge aslittle as possible, and we always show you upfront.
-            </p>
+            <div>
+              <p class=" font-sans opacity-50 text-gray-900  mt-8 mb-6 w-12/12 text-base sm:max-w-screen-sm sm:text-2xl    md:leading-normal   lg:text-3xl lg:max-w-screen-md xl:text-3xl ">
+                We charge as little as possible, and we always show you upfront.
+              </p>
+            </div>
           </div>
         </m.div>
       </m.main>

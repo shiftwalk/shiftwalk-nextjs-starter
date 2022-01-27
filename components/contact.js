@@ -12,7 +12,7 @@ export default function Contact(props) {
     { title: "Links", subtitle: "agency@info.com", info: "+336655465" },
   ];
   return (
-    <Container extraClasses="Contact-Container py-16 md:py-32">
+    <Container extraClasses="Contact-Container py-16 md:py-32 lg:py-56">
       <div
         class="contact   grid grid-cols-1 gap-20  md:grid-cols-2 lg:grid-cols-3 "
         aria-labelledby="footer-heading">

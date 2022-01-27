@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Futura", "Poppins", "sans-serif"],
+      sans: ["Futura", "Arial", "sans-serif"],
       mono: ["Lucida Console", "Courier", "monospace"],
       neueLight: ["Neue-Light"],
       neueRegular: ["Neue-Regular"],

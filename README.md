@@ -1,4 +1,4 @@
-# Next Tailwind Framer Motion Boilerplate
+# Shiftwalk Starter
 Demo: [https://sg-next-tailwind-motion.vercel.app/](https://sg-next-tailwind-motion.vercel.app/)
 
 Locomotive Scroll Demo: [https://sg-next-tailwind-motion-locomotive.vercel.app/](https://sg-next-tailwind-motion-locomotive.vercel.app/)
